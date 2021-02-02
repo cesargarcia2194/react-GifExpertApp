@@ -5,7 +5,9 @@ export const AddCategory = ({setCategories}) => {
     const [inputValue, setInputValue] = useState('');
     
     const hadleInputChange = (e) =>{
-        setInputValue(e.target.value)
+        setInputValue(e.target.value);
+
+        console.log('handleIputChange llamado')
     }
 
     const handleSubmit = (e) => {
